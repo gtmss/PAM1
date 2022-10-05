@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textOut3"
+        android:layout_width="232dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="91dp"
+        android:text="Result"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightFill" />
+
+    <TextView
+        android:id="@+id/textOut2"
+        android:layout_width="232dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="150dp"
+        android:text="Ok"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/caluclateBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightFill"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/caluclateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="148dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/heightFill"
+        android:layout_width="269dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="296dp"
+        android:ems="10"
+        android:hint="height (cm)"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/caluclateBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightFill" />
+
+    <EditText
+        android:id="@+id/weightFill"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="weight (kg)"
+        android:inputType="numberDecimal"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/heightFill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
